@@ -110,6 +110,7 @@
 		9513744020504C7A0014E371 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				9536A7DA204EC1090074EBB7 /* Assets.xcassets */,
 				9513743A20504A010014E371 /* BobMarley.mp3 */,
 				9513743E20504C6B0014E371 /* Metallica.mp3 */,
 				9513743C20504C500014E371 /* PinkFloyd.mp3 */,
@@ -147,7 +148,6 @@
 				95B2B94A202B3F1700D841CA /* Main.storyboard */,
 				95B2B94F202B3F1700D841CA /* LaunchScreen.storyboard */,
 				95B2B952202B3F1700D841CA /* Info.plist */,
-				9536A7DA204EC1090074EBB7 /* Assets.xcassets */,
 			);
 			path = SimpleShopApp;
 			sourceTree = "<group>";

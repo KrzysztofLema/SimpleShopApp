@@ -8,17 +8,19 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
+class MusicDetailViewController: UIViewController, ChangeAmountDelegate {
+    
 
-class MusicDetailViewController: UIViewController {
-
+    let realm = try!Realm()
     var music:MusicModel = MusicModel()
     var player:AVAudioPlayer?
-    
     @IBOutlet var headerView:MusicDetiledHeaderView!
     @IBAction func playMusicButton(_ sender: Any) {
         playSound()
     }
 
+    @IBOutlet weak var sumLabel: UILabel!
     @IBAction func stopPlayMusicButton(_ sender: Any) {
     player?.stop()
     }
@@ -27,6 +29,7 @@ class MusicDetailViewController: UIViewController {
            headerView.musicImageView.image = UIImage(named: music.image)
             headerView.titleLabel.text = music.title
             headerView.priceLabel.text = String(music.price)
+        sumLabel.text = totalAmount()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,33 +43,47 @@ class MusicDetailViewController: UIViewController {
             print(music.music)
             return
         }
-        
+    
         do {
-            /// this codes for making this app ready to takeover the device audio
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
-            
-            /// change fileTypeHint according to the type of your audio file (you can omit this)
-            
-            /// for iOS 11 onward, use :
+    
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
-            /// else :
-            /// player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3)
-            
-            // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
-    } /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    @IBAction func buyButton(_ sender: Any) {
+        let newData:Data = Data()
+            newData.title = music.title
+            newData.price = music.price
+            saveData(data: newData)
+            sumLabel.text = totalAmount()
+    }
+    func saveData(data:Data){
+        do{
+           try realm.write {
+                realm.add(data)
+            }
+        }catch{
+            print("Could not add data to database, \(error)")
+        }
+    }
+    func totalAmount()->String{
+        let totalAmount:Double = realm.objects(Data.self).sum(ofProperty: "price")
+        let totalAmoutString = String(totalAmount)
+        return totalAmoutString
+    }
+    
+    func changeTotalAmountDelegate(amount: String) {
+        sumLabel.text = amount
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "listOfPurchase"{
+            let destinationVC = segue.destination as! CartTableViewController
+            destinationVC.delegate = self
+        }
+}
 }
