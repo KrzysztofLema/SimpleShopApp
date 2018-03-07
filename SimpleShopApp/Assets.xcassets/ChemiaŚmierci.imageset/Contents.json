@@ -1,0 +1,35 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 163
+        },
+        "cap-insets" : {
+          "bottom" : 190,
+          "top" : 126,
+          "right" : 151,
+          "left" : 151
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "ChemiaŚmierci.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
