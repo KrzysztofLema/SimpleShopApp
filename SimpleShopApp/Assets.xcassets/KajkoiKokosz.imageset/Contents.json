@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "KajkoiKokosz.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "KajkoiKokosz.jpg",
       "scale" : "2x"
     },
     {

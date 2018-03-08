@@ -1,8 +1,8 @@
 import UIKit
 
-class DramaTableViewController: UITableViewController{
+class BooksTableViewController: UITableViewController{
     
-    var dramaBooks:[BookModel]=[BookModel(title: "48 Tygodni",author: "Magdalena Korde", image: "48Tygodni",price: 26.69,description:"loremIpsum" ),BookModel(title: "Gwiazdka z Nieba",author: "Katarzyna Michalak", image: "GwizadkaZNieba",price: 26.57,description:"loremIpsum" ),BookModel(title: "Przybysz z Morza",author: "Windston Gordon", image: "PrzybyszZMorza",price: 24.49,description:"loremIpsum" ),BookModel(title: "Jak Zawsze",author: "Zygmund Miłoszewski", image: "JakZawsze",price: 27.19,description:"loremIpsum" )]
+    var dramaBooks:[BookModel] = []
     
     override func viewDidLoad() {
         print("witaj w DramaController")

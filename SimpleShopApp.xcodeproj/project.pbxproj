@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		215BB9CD9B75635E7B236E98 /* Pods_SimpleShopApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539B44868BB46169377EBB90 /* Pods_SimpleShopApp.framework */; };
-		950924C2202CA02B00578997 /* ComicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950924C1202CA02B00578997 /* ComicsTableViewCell.swift */; };
 		950CA550202C96D500AA3D1D /* DramaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950CA54F202C96D500AA3D1D /* DramaTableViewCell.swift */; };
 		951374332050026A0014E371 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951374322050026A0014E371 /* MusicModel.swift */; };
 		9513743520500D6B0014E371 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9513743420500D6B0014E371 /* MusicTableViewCell.swift */; };
@@ -19,11 +18,8 @@
 		9513743F20504C6B0014E371 /* Metallica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9513743E20504C6B0014E371 /* Metallica.mp3 */; };
 		9536A7DB204EC1090074EBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9536A7DA204EC1090074EBB7 /* Assets.xcassets */; };
 		9536A7DD204EC3420074EBB7 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536A7DC204EC3420074EBB7 /* CartTableViewController.swift */; };
-		95497600202B799D009F7547 /* CriminalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954975FF202B799D009F7547 /* CriminalTableViewController.swift */; };
-		95497602202B7D0F009F7547 /* DramaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95497601202B7D0F009F7547 /* DramaTableViewController.swift */; };
+		95497602202B7D0F009F7547 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95497601202B7D0F009F7547 /* BooksTableViewController.swift */; };
 		95497604202B7D31009F7547 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95497603202B7D31009F7547 /* MusicTableViewController.swift */; };
-		95497606202B7D57009F7547 /* ComicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95497605202B7D57009F7547 /* ComicsTableViewController.swift */; };
-		95497608202B9D23009F7547 /* CriminalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95497607202B9D23009F7547 /* CriminalTableViewCell.swift */; };
 		95B2B947202B3F1700D841CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2B946202B3F1700D841CA /* AppDelegate.swift */; };
 		95B2B94C202B3F1700D841CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B2B94A202B3F1700D841CA /* Main.storyboard */; };
 		95B2B951202B3F1700D841CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B2B94F202B3F1700D841CA /* LaunchScreen.storyboard */; };
@@ -38,7 +34,6 @@
 		0C66AD0A7057DCA4C769FE94 /* Pods-SimpleShopApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleShopApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleShopApp/Pods-SimpleShopApp.debug.xcconfig"; sourceTree = "<group>"; };
 		539B44868BB46169377EBB90 /* Pods_SimpleShopApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleShopApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6599F689F24E6F3A3210F3D5 /* Pods-SimpleShopApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleShopApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleShopApp/Pods-SimpleShopApp.release.xcconfig"; sourceTree = "<group>"; };
-		950924C1202CA02B00578997 /* ComicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsTableViewCell.swift; sourceTree = "<group>"; };
 		950CA54F202C96D500AA3D1D /* DramaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaTableViewCell.swift; sourceTree = "<group>"; };
 		951374322050026A0014E371 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		9513743420500D6B0014E371 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
@@ -49,11 +44,8 @@
 		9513743E20504C6B0014E371 /* Metallica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metallica.mp3; sourceTree = "<group>"; };
 		9536A7DA204EC1090074EBB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9536A7DC204EC3420074EBB7 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
-		954975FF202B799D009F7547 /* CriminalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriminalTableViewController.swift; sourceTree = "<group>"; };
-		95497601202B7D0F009F7547 /* DramaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaTableViewController.swift; sourceTree = "<group>"; };
+		95497601202B7D0F009F7547 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		95497603202B7D31009F7547 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
-		95497605202B7D57009F7547 /* ComicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsTableViewController.swift; sourceTree = "<group>"; };
-		95497607202B9D23009F7547 /* CriminalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriminalTableViewCell.swift; sourceTree = "<group>"; };
 		95B2B943202B3F1700D841CA /* SimpleShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B2B946202B3F1700D841CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B2B94B202B3F1700D841CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,13 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				95E3A215202CCA1F00A2AECB /* DetailViewController.swift */,
-				954975FF202B799D009F7547 /* CriminalTableViewController.swift */,
-				95497607202B9D23009F7547 /* CriminalTableViewCell.swift */,
-				95497601202B7D0F009F7547 /* DramaTableViewController.swift */,
+				95497601202B7D0F009F7547 /* BooksTableViewController.swift */,
 				95497603202B7D31009F7547 /* MusicTableViewController.swift */,
-				95497605202B7D57009F7547 /* ComicsTableViewController.swift */,
 				950CA54F202C96D500AA3D1D /* DramaTableViewCell.swift */,
-				950924C1202CA02B00578997 /* ComicsTableViewCell.swift */,
 				95FD8DF3203ED0B0003EA640 /* ViewController.swift */,
 				9536A7DC204EC3420074EBB7 /* CartTableViewController.swift */,
 				9513743420500D6B0014E371 /* MusicTableViewCell.swift */,
@@ -139,12 +127,12 @@
 		95B2B945202B3F1700D841CA /* SimpleShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				9513744020504C7A0014E371 /* New Group */,
 				950924C0202C9F5C00578997 /* Models */,
 				950924BF202C9F2100578997 /* Controllers */,
 				95B2B946202B3F1700D841CA /* AppDelegate.swift */,
 				95E3A217202CCCBD00A2AECB /* BooksDetiledHeaderView.swift */,
 				9513743820502C110014E371 /* MusicDetiledHeaderView.swift */,
-				9513744020504C7A0014E371 /* New Group */,
 				95B2B94A202B3F1700D841CA /* Main.storyboard */,
 				95B2B94F202B3F1700D841CA /* LaunchScreen.storyboard */,
 				95B2B952202B3F1700D841CA /* Info.plist */,
@@ -307,11 +295,8 @@
 			files = (
 				95E3A216202CCA1F00A2AECB /* DetailViewController.swift in Sources */,
 				95F4A3DC204EAAFA00129AB9 /* Data.swift in Sources */,
-				95497602202B7D0F009F7547 /* DramaTableViewController.swift in Sources */,
+				95497602202B7D0F009F7547 /* BooksTableViewController.swift in Sources */,
 				95497604202B7D31009F7547 /* MusicTableViewController.swift in Sources */,
-				950924C2202CA02B00578997 /* ComicsTableViewCell.swift in Sources */,
-				95497606202B7D57009F7547 /* ComicsTableViewController.swift in Sources */,
-				95497600202B799D009F7547 /* CriminalTableViewController.swift in Sources */,
 				951374372050266F0014E371 /* MusicDetailViewController.swift in Sources */,
 				9513743520500D6B0014E371 /* MusicTableViewCell.swift in Sources */,
 				95B2B947202B3F1700D841CA /* AppDelegate.swift in Sources */,
@@ -322,7 +307,6 @@
 				950CA550202C96D500AA3D1D /* DramaTableViewCell.swift in Sources */,
 				95F012E7202C7E2E00CF2CB1 /* BookModel.swift in Sources */,
 				95E3A218202CCCBD00A2AECB /* BooksDetiledHeaderView.swift in Sources */,
-				95497608202B9D23009F7547 /* CriminalTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
